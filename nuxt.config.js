@@ -65,11 +65,11 @@ module.exports = {
   //扩展路由
   router:{
     extendRoutes(routes,resolve){
-      routes.push({
-        name:'home1',
-        path:'/',
-        component:resolve(__dirname,'pages/home.vue')
-      })
+      // routes.push({
+      //   name:'home1',
+      //   path:'/',
+      //   component:resolve(__dirname,'pages/home.vue')
+      // })
     }
 
   }
