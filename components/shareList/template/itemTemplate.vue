@@ -7,7 +7,7 @@
         </span>
         <header>
             <h1>
-                <a :href="'#/DetailShare?aid='+id" target="_blank">
+                <a :href="'/DetailShare?aid='+aid" target="_blank">
                     {{title}}
                 </a>
             </h1>
@@ -18,7 +18,7 @@
                 <i class="fa fa-fw fa-comments"></i>活捉 {{comment_count}}条 •
                 <span class="rareBox">
                     <i class="fa fa-fw fa-heart"></i>{{link_count?link_count:0}}点赞 •
-                    <i class="fa fa-fw fa-star"></i>{{collect_count?collect_count:0}}点赞 •
+                    <i class="fa fa-fw fa-star"></i>{{collect_count?collect_count:0}}收藏 •
                 </span>
             </h2>
             <div class="label-bar">
@@ -51,7 +51,7 @@ export default {
             type:String,
             defalut:''
         },
-        id:{
+        aid:{
             type:Number,
             defalut:0
         },

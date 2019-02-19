@@ -21,7 +21,7 @@ export default {
         return {
             articleList:[{
                 create_time:'2018-01-01',
-                id:1,
+                aid:1,
                 class_id:2,
                 title:'如何创建nuxt项目',
                 cate_name:'小程序',

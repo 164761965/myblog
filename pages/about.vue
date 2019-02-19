@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="page-about">
     <div>
       content
     </div>

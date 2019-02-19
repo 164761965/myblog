@@ -10,6 +10,7 @@ import json from 'koa-json'
 import dbConfig from './dbs/config'
 import passport from './interface/utils/passport'
 import users from './interface/users'
+import articles from './interface/articles'
 
 const app = new Koa()
 
@@ -34,6 +35,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use(users.routes()).use(users.allowedMethods())
+app.use(articles.routes()).use(articles.allowedMethods())
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
